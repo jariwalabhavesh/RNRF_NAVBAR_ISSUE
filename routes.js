@@ -16,14 +16,14 @@ import Navbar from './src/Navbar'
 class RootView extends Component {
 
   componentDidMount() {
-    Actions.login()
+    Actions.drawerStack()
   }
   render() {
     return <Router>
       <Stack key='root' hideNavBar navBar={Navbar}>
-        <Scene key='login' component={Login} title='Login1' hideNavBar={false} type={ActionConst.RESET} />
+        <Scene key='login' component={Login} title='Login' hideNavBar={false} type={ActionConst.RESET} hideNavBar/>
         <Drawer key='drawerStack' contentComponent={DrawerBar} drawerWidth={300} type={ActionConst.RESET}>
-          <Stack key='jobOverview' navBar={Navbar}>
+          <Stack key='jobOverview'>
             <Scene key='home' component={Home} title='Home' hideNavBar />
             <Scene back key='detail' component={Detail} title='Detail' />
           </Stack>

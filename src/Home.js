@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return (
             <Container>
-                <Content contentContainerStyle={{marginTop:75}}>
+                <Content contentContainerStyle={{marginTop:30}}>
                     <Text>This is Home Page</Text>
                     <Button block primary onPress={()=>Actions.detail()}>
                         <Text>Got To Detail</Text>
