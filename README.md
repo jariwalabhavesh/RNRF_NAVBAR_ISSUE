@@ -1,6 +1,6 @@
 # RNRF_NAVBAR_ISSUE
 
-Project contents issue regenrated code for react-native-router-flux
+Project contents issue regenrated code for react-native-router-flux and refer to ISSUE https://github.com/aksonov/react-native-router-flux/issues/3304
 
 Steps to reproduce:
 
